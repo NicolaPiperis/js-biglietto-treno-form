@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link connection css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>js-biglietto-treno-form</title>
+
+</head>
+<body>
+    
+    <main>
+
+        <div id="container">
+
+            <div id="question">
+
+                <div id="input_part">
+
+                    <div id="name" class="col_input">
+
+                        <label for="name">
+                            Nome e Cognome
+                        </label>
+    
+                        <form>
+                            <input id="name_input" name="name" type="text">
+                        </form>
+    
+                    </div>
+    
+                    <div id="km" class="col_input">
+    
+                        <label for="km">
+                            Km da percorrere
+                        </label>
+    
+                        <form>
+                            <input id="km_input" name="km" type="number">
+                        </form>
+    
+                    </div>
+    
+                    <div id="age" class="col_input">
+    
+                        <label for="age">
+                            Km da percorrere
+                        </label>
+    
+                        <form>
+                            <select name="age" id="age_input">
+                                <option value="">--Please choose an option--
+                                </option>
+    
+                                <option value="maggiorenne">maggiorenne</option>
+                                <option value="minorenne">minorenne</option>
+                                <option value=">65">>65</option>
+    
+                            </select>
+                        </form>
+    
+                    </div>
+
+                </div>
+
+                <div id="generator_part">
+
+                    <form>
+
+                        <input class="green" type="button" value="genera">
+
+                        <input class="red" type="button" value="annulla">
+
+                    </form>
+
+                </div>
+
+
+            </div>
+
+            <div id="ticket"></div>
+
+        </div>
+
+    </main>
+
+
+    <script type="text/javascript" src="js/main.js">
+    </script>
+
+</body>
+</html>
