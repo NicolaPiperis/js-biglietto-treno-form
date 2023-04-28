@@ -1,5 +1,5 @@
 // Declare the global variables
-let numberKm, userAge, userName, basePrice, finalPrice, ticket_discount, wagon, random_cp, generator, exit, ticket_card;
+let numberKm, userAge, userName, basePrice, finalPrice, ticket_discount, wagon, random_cp, generator, exit, ticketCard;
 
 // The program will ask for the user's name
 userName = document.getElementById("name_input").value;
@@ -66,11 +66,11 @@ console.log("The final price is " + finalPrice + "€");
 
 // generator and exit
 generator = document.getElementById("generator");
-ticket_card = document.getElementById("ticket");
+ticketCard = document.getElementById("ticket");
 
-generator.addEventListener("click", 
-    function () {
-        ticket_card.classList.Add("active")
-    }
-    console.log();
-)
+generator.addEventListener("click",
+ function() {
+    ticketCard.classList.Add = "active";
+  });
+
+console.log(generator, ticketCard);
