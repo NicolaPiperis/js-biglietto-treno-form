@@ -61,16 +61,23 @@ console.log("The final price is " + finalPrice + "€");
     document.getElementById("random_cp").innerHTML = random_cp; 
 
     // ticket price
-    document.getElementById("finalPrice").innerHTML = finalPrice + "€"
+    document.getElementById("finalPrice").innerHTML = finalPrice.toFixed(2) + "€"
 
 
 // generator and exit
+exit = document.getElementById("exit");
 generator = document.getElementById("generator");
-ticketCard = document.getElementById("ticket");
+ticketCard = document.querySelector(".ticket");
 
 generator.addEventListener("click",
- function() {
-    ticketCard.classList.Add = "active";
-  });
+ function () {
+    ticketCard.setAttribute("id","active");
+});
+
+
 
 console.log(generator, ticketCard);
+// exit.addEventListener("click",
+//  function() {
+//     ticketCard.setAttribute("id","exit_ticket");
+// });
